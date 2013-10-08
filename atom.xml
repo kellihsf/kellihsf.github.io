@@ -4,7 +4,7 @@
   <title><![CDATA[Waitress Turned Computer Geek]]></title>
   <link href="http://kellihsf.github.io/atom.xml" rel="self"/>
   <link href="http://kellihsf.github.io/"/>
-  <updated>2013-10-07T21:07:52-06:00</updated>
+  <updated>2013-10-08T17:46:51-06:00</updated>
   <id>http://kellihsf.github.io/</id>
   <author>
     <name><![CDATA[Kelli Hackethal]]></name>
@@ -18,37 +18,36 @@
     <link href="http://kellihsf.github.io/blog/2013/10/07/back-to-school-day-1/"/>
     <updated>2013-10-07T20:35:00-06:00</updated>
     <id>http://kellihsf.github.io/blog/2013/10/07/back-to-school-day-1</id>
-    <content type="html"><![CDATA[<p>First blog post, yay!</p>
+    <content type="html"><![CDATA[<p>As the title suggests, it is yet indeed the first day of school for me. I am taking the DaVinci
+Coder&rsquo;s course titled &ldquo;Building the Toolbelt of a Junior Ruby on Rails Developer.&rdquo; This class
+is a full immersion RoR based training that lasts for a short 11 weeks.</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo make_me_a_sandwich</span></code></pre></td></tr></table></div></figure>
+<p>Our first assignment was to get a blog up and running. The purpose of this blog is for
+students to talk about their experiences throughout the class, what&rsquo;s being taught,
+technical issues and any other information that will be helpful to refer to or perhaps help
+someone else who is learning the same material.</p>
+
+<p>Helpful programs to check out:</p>
+
+<p>Evernote: Great for taking notes in class <br>
+Anki: Flashcard application for quizzing yourself on definitions, topics, concepts, etc.. <br>
+Github: A code sharing and publishing website <br>
+Airparrot: Allows students to mirror their screen on to the class projector; helpful for solving problems that other students might be having too <br>
+Moom: Lets you move and zoom windows easily all through the keyboard shortcuts</p>
+
+<p>My goals for this blog is to: <br>
+Keep it updated and blog about something after each class; <br>
+Help others who might be learning from a beginning level; <br>
+Be a great reference tool to track my progress and refer back to any questions
+or problems I had. <br></p>
+
+<br>
 
 
+<p>Books that are helpful for a beginner learning RoR:</p>
 
-
-<figure class='code'><figcaption><span>Dog class</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Dog</span>
-</span><span class='line'>    <span class="k">def</span> <span class="nf">speak</span>
-</span><span class='line'>        <span class="nb">puts</span> <span class="s2">&quot;Bark&quot;</span>
-</span><span class='line'>     <span class="k">end</span>
-</span><span class='line'>   <span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<div><script src='https://gist.github.com/6878747.js'></script>
-<noscript><pre><code>class Horse
-  def speak
-    &quot;Neighghhhh&quot;
-  end
-end
-</code></pre></noscript></div>
-
+<p>Learn to Program by: Chris Pine <br>
+Beginning Ruby from Novice to Professional by: Peter Cooper</p>
 ]]></content>
   </entry>
   
