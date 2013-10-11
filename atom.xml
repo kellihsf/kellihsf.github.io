@@ -4,7 +4,7 @@
   <title><![CDATA[Waitress Turned Computer Geek]]></title>
   <link href="http://kellihsf.github.io/atom.xml" rel="self"/>
   <link href="http://kellihsf.github.io/"/>
-  <updated>2013-10-08T17:46:51-06:00</updated>
+  <updated>2013-10-10T21:28:59-06:00</updated>
   <id>http://kellihsf.github.io/</id>
   <author>
     <name><![CDATA[Kelli Hackethal]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mastering the Command Line]]></title>
+    <link href="http://kellihsf.github.io/blog/2013/10/10/mastering-the-command-line/"/>
+    <updated>2013-10-10T21:09:00-06:00</updated>
+    <id>http://kellihsf.github.io/blog/2013/10/10/mastering-the-command-line</id>
+    <content type="html"><![CDATA[<p>One of the basic and most important tools for new coders to
+learn is the command line. It&rsquo;s how you talk to your computer to:
+change directories, creating/delete files, locate a file, just
+to name a few.</p>
+
+<p>In class we are learning about the command line on this site:</p>
+
+<p><a href="http://cli.learncodethehardway.org/book/">http://cli.learncodethehardway.org/book/</a></p>
+
+<p>It&rsquo;s easy to follow along and it has you run commands that
+will be the most useful.</p>
+
+<p>Another helpful site:</p>
+
+<p><a href="http://cli.learncodethehardway.org/book/">http://cli.learncodethehardway.org/book/</a></p>
+
+<p>I&rsquo;m a big fan of cheat sheets!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Back to school: Day 1]]></title>
