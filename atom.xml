@@ -4,7 +4,7 @@
   <title><![CDATA[Waitress Turned Computer Geek]]></title>
   <link href="http://kellihsf.github.io/atom.xml" rel="self"/>
   <link href="http://kellihsf.github.io/"/>
-  <updated>2013-10-13T11:53:46-06:00</updated>
+  <updated>2013-10-13T12:28:34-06:00</updated>
   <id>http://kellihsf.github.io/</id>
   <author>
     <name><![CDATA[Kelli Hackethal]]></name>
@@ -46,6 +46,12 @@ most useful:</p>
 <span class='line-number'>21</span>
 <span class='line-number'>22</span>
 <span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>git init
 </span><span class='line'># creates a git repo from command line
 </span><span class='line'>
@@ -68,8 +74,13 @@ most useful:</p>
 </span><span class='line'># switch to master branch
 </span><span class='line'>
 </span><span class='line'>git branch branch_name
-</span><span class='line'>#creates a branch with that branch name
-</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'># creates a branch with that branch name
+</span><span class='line'>
+</span><span class='line'>git add "file name"
+</span><span class='line'># adds file to the stage
+</span><span class='line'>
+</span><span class='line'>git commit -m "commit message"
+</span><span class='line'># commits changes</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Here are some helpful resources to learn the git commands and the git
