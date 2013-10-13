@@ -4,7 +4,7 @@
   <title><![CDATA[Waitress Turned Computer Geek]]></title>
   <link href="http://kellihsf.github.io/atom.xml" rel="self"/>
   <link href="http://kellihsf.github.io/"/>
-  <updated>2013-10-10T21:28:59-06:00</updated>
+  <updated>2013-10-13T11:53:46-06:00</updated>
   <id>http://kellihsf.github.io/</id>
   <author>
     <name><![CDATA[Kelli Hackethal]]></name>
@@ -12,6 +12,78 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Notes on Github]]></title>
+    <link href="http://kellihsf.github.io/blog/2013/10/13/notes-on-github/"/>
+    <updated>2013-10-13T10:50:00-06:00</updated>
+    <id>http://kellihsf.github.io/blog/2013/10/13/notes-on-github</id>
+    <content type="html"><![CDATA[<p>While looking through all of my notes on git and github, I think
+this post will be more of intro type stuff and later I&rsquo;ll get into
+more complicated concepts. Here are a list of commands I find
+most useful:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git init
+</span><span class='line'># creates a git repo from command line
+</span><span class='line'>
+</span><span class='line'>git show
+</span><span class='line'># shows last commit
+</span><span class='line'>
+</span><span class='line'>git diff
+</span><span class='line'># shows what will be committed, shows what lines have changed
+</span><span class='line'>
+</span><span class='line'>git log
+</span><span class='line'># view history of commits
+</span><span class='line'>
+</span><span class='line'>git status
+</span><span class='line'># shows what files have been changed
+</span><span class='line'>
+</span><span class='line'>git branch
+</span><span class='line'># to see what branch you're on
+</span><span class='line'>
+</span><span class='line'>git checkout master
+</span><span class='line'># switch to master branch
+</span><span class='line'>
+</span><span class='line'>git branch branch_name
+</span><span class='line'>#creates a branch with that branch name
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here are some helpful resources to learn the git commands and the git
+workflow:</p>
+
+<p><a href="http://mettadore.com/analysis/a-simple-git-rebase-workflow-explained/">A Simple Git Rebase Workflow, Explained</a></p>
+
+<p><a href="http://mettadore.com/analysis/the-ever-deployable-github-workflow/">The Ever-Deployable Github Workflow</a></p>
+
+<p><a href="http://www.git-scm.com/book" >Pro Git Book</a></p>
+
+<p><a href="http://johnjwilliams.org/2013/07/git-command-essentials.html">JohnWilliams.org: Git Command Essentials</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mastering the Command Line]]></title>
@@ -25,16 +97,10 @@ to name a few.</p>
 
 <p>In class we are learning about the command line on this site:</p>
 
-<p><a href="http://cli.learncodethehardway.org/book/">http://cli.learncodethehardway.org/book/</a></p>
+<p><a href"http://cli.learncodethehardway.org/book/">The Command Line Crash Course</a></p>
 
 <p>It&rsquo;s easy to follow along and it has you run commands that
 will be the most useful.</p>
-
-<p>Another helpful site:</p>
-
-<p><a href="http://cli.learncodethehardway.org/book/">http://cli.learncodethehardway.org/book/</a></p>
-
-<p>I&rsquo;m a big fan of cheat sheets!</p>
 ]]></content>
   </entry>
   
