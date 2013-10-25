@@ -4,7 +4,7 @@
   <title><![CDATA[Waitress Turned Computer Geek]]></title>
   <link href="http://kellihsf.github.io/atom.xml" rel="self"/>
   <link href="http://kellihsf.github.io/"/>
-  <updated>2013-10-13T12:28:34-06:00</updated>
+  <updated>2013-10-25T14:58:51-06:00</updated>
   <id>http://kellihsf.github.io/</id>
   <author>
     <name><![CDATA[Kelli Hackethal]]></name>
@@ -12,6 +12,80 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bottles of Beer in Ruby]]></title>
+    <link href="http://kellihsf.github.io/blog/2013/10/25/bottles-of-beer-in-ruby/"/>
+    <updated>2013-10-25T13:26:00-06:00</updated>
+    <id>http://kellihsf.github.io/blog/2013/10/25/bottles-of-beer-in-ruby</id>
+    <content type="html"><![CDATA[<p>The &ldquo;99 Bottles of Beer on the Wall&rdquo; seems like a common exercise that many
+people use in many different programming languages. I got held up on this for
+a while until I went through it with a classmate and we broke down the problem into
+smaller and more manageable chunks. I find that most of the time my biggest problem
+is where to start. What I have found to be really helpful is to make a list of
+what the program should do and then stating it in simple terms. For example, in the Bottles of Beer
+homework this is what we wanted to see happen: <br>
+1. we need each loop to show the number of bottles &ndash; then each reduced by one <br>
+2. we need print bottles of beer on the wall <br>
+3. we need the last line to change to no more bottles of beer <br>
+4. we need for bottles to be bottle in the case of one bottle <br>
+5. we need very last verse to be entirely different when it complete<br></p>
+
+<p>And ta-da! Here is what we came up with: <br></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/usr/bin/env ruby
+</span><span class='line'>
+</span><span class='line'>def pluralize(number_of_bottles)
+</span><span class='line'>  if number_of_bottles &gt; 1
+</span><span class='line'>    "#{number_of_bottles} bottles"
+</span><span class='line'>  elsif number_of_bottles == 1
+</span><span class='line'>    "1 bottle"
+</span><span class='line'>  else
+</span><span class='line'>    "no more bottles"
+</span><span class='line'>    end
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>def beer_song(number_of_bottles)
+</span><span class='line'>  if number_of_bottles &gt;= 1
+</span><span class='line'>    puts "#{pluralize(number_of_bottles)} of beer on the wall, #{pluralize(number_of_bottles)} of beer."
+</span><span class='line'>    number_of_bottles = number_of_bottles - 1
+</span><span class='line'>    puts "Take one down and pass it around, #{pluralize(number_of_bottles)} of beer on the wall. \n \n"
+</span><span class='line'>    beer_song(number_of_bottles)
+</span><span class='line'>  else
+</span><span class='line'>    puts "No more bottles of beer on the wall, no more bottles of beer."
+</span><span class='line'>    puts "Go to the store and buy some more, 99 bottles of beer on the wall."
+</span><span class='line'>  end
+</span><span class='line'>end
+</span><span class='line'>puts beer_song(99)</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Notes on Github]]></title>

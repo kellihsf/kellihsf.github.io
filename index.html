@@ -9,9 +9,8 @@
   <meta name="author" content="Kelli Hackethal">
 
   
-  <meta name="description" content="While looking through all of my notes on git and github, I think
-this post will be more of intro type stuff and later I&rsquo;ll get into
-more &hellip;">
+  <meta name="description" content="The &ldquo;99 Bottles of Beer on the Wall&rdquo; seems like a common exercise that many
+people use in many different programming languages. I got &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +65,107 @@ more &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/25/bottles-of-beer-in-ruby/">Bottles of Beer in Ruby</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-25T13:26:00-06:00" pubdate data-updated="true">Oct 25<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The &ldquo;99 Bottles of Beer on the Wall&rdquo; seems like a common exercise that many
+people use in many different programming languages. I got held up on this for
+a while until I went through it with a classmate and we broke down the problem into
+smaller and more manageable chunks. I find that most of the time my biggest problem
+is where to start. What I have found to be really helpful is to make a list of
+what the program should do and then stating it in simple terms. For example, in the Bottles of Beer
+homework this is what we wanted to see happen: <br>
+1. we need each loop to show the number of bottles &ndash; then each reduced by one <br>
+2. we need print bottles of beer on the wall <br>
+3. we need the last line to change to no more bottles of beer <br>
+4. we need for bottles to be bottle in the case of one bottle <br>
+5. we need very last verse to be entirely different when it complete<br></p>
+
+<p>And ta-da! Here is what we came up with: <br></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/usr/bin/env ruby
+</span><span class='line'>
+</span><span class='line'>def pluralize(number_of_bottles)
+</span><span class='line'>  if number_of_bottles &gt; 1
+</span><span class='line'>    "#{number_of_bottles} bottles"
+</span><span class='line'>  elsif number_of_bottles == 1
+</span><span class='line'>    "1 bottle"
+</span><span class='line'>  else
+</span><span class='line'>    "no more bottles"
+</span><span class='line'>    end
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>def beer_song(number_of_bottles)
+</span><span class='line'>  if number_of_bottles &gt;= 1
+</span><span class='line'>    puts "#{pluralize(number_of_bottles)} of beer on the wall, #{pluralize(number_of_bottles)} of beer."
+</span><span class='line'>    number_of_bottles = number_of_bottles - 1
+</span><span class='line'>    puts "Take one down and pass it around, #{pluralize(number_of_bottles)} of beer on the wall. \n \n"
+</span><span class='line'>    beer_song(number_of_bottles)
+</span><span class='line'>  else
+</span><span class='line'>    puts "No more bottles of beer on the wall, no more bottles of beer."
+</span><span class='line'>    puts "Go to the store and buy some more, 99 bottles of beer on the wall."
+</span><span class='line'>  end
+</span><span class='line'>end
+</span><span class='line'>puts beer_song(99)</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -299,6 +399,10 @@ Beginning Ruby from Novice to Professional by: Peter Cooper</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/10/25/bottles-of-beer-in-ruby/">Bottles of Beer in Ruby</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/10/13/notes-on-github/">Notes on Github</a>

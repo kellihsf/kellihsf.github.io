@@ -5,13 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Notes on Github - Waitress Turned Computer Geek</title>
+  <title>Bottles of Beer in Ruby - Waitress Turned Computer Geek</title>
   <meta name="author" content="Kelli Hackethal">
 
   
-  <meta name="description" content="While looking through all of my notes on git and github, I think
-this post will be more of intro type stuff and later I&rsquo;ll get into
-more &hellip;">
+  <meta name="description" content="The &ldquo;99 Bottles of Beer on the Wall&rdquo; seems like a common exercise that many
+people use in many different programming languages. I got &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +19,7 @@ more &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://kellihsf.github.io/blog/2013/10/13/notes-on-github/">
+  <link rel="canonical" href="http://kellihsf.github.io/blog/2013/10/25/bottles-of-beer-in-ruby/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -69,7 +68,7 @@ more &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Notes on Github</h1>
+      <h1 class="entry-title">Bottles of Beer in Ruby</h1>
     
     
       <p class="meta">
@@ -85,17 +84,27 @@ more &hellip;">
   
 
 
-<time datetime="2013-10-13T10:50:00-06:00" pubdate data-updated="true">Oct 13<span>th</span>, 2013</time>
+<time datetime="2013-10-25T13:26:00-06:00" pubdate data-updated="true">Oct 25<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>While looking through all of my notes on git and github, I think
-this post will be more of intro type stuff and later I&rsquo;ll get into
-more complicated concepts. Here are a list of commands I find
-most useful:</p>
+<div class="entry-content"><p>The &ldquo;99 Bottles of Beer on the Wall&rdquo; seems like a common exercise that many
+people use in many different programming languages. I got held up on this for
+a while until I went through it with a classmate and we broke down the problem into
+smaller and more manageable chunks. I find that most of the time my biggest problem
+is where to start. What I have found to be really helpful is to make a list of
+what the program should do and then stating it in simple terms. For example, in the Bottles of Beer
+homework this is what we wanted to see happen: <br>
+1. we need each loop to show the number of bottles &ndash; then each reduced by one <br>
+2. we need print bottles of beer on the wall <br>
+3. we need the last line to change to no more bottles of beer <br>
+4. we need for bottles to be bottle in the case of one bottle <br>
+5. we need very last verse to be entirely different when it complete<br></p>
+
+<p>And ta-da! Here is what we came up with: <br></p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -121,52 +130,33 @@ most useful:</p>
 <span class='line-number'>22</span>
 <span class='line-number'>23</span>
 <span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git init
-</span><span class='line'># creates a git repo from command line
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/usr/bin/env ruby
 </span><span class='line'>
-</span><span class='line'>git show
-</span><span class='line'># shows last commit
+</span><span class='line'>def pluralize(number_of_bottles)
+</span><span class='line'>  if number_of_bottles &gt; 1
+</span><span class='line'>    "#{number_of_bottles} bottles"
+</span><span class='line'>  elsif number_of_bottles == 1
+</span><span class='line'>    "1 bottle"
+</span><span class='line'>  else
+</span><span class='line'>    "no more bottles"
+</span><span class='line'>    end
+</span><span class='line'>  end
 </span><span class='line'>
-</span><span class='line'>git diff
-</span><span class='line'># shows what will be committed, shows what lines have changed
-</span><span class='line'>
-</span><span class='line'>git log
-</span><span class='line'># view history of commits
-</span><span class='line'>
-</span><span class='line'>git status
-</span><span class='line'># shows what files have been changed
-</span><span class='line'>
-</span><span class='line'>git branch
-</span><span class='line'># to see what branch you're on
-</span><span class='line'>
-</span><span class='line'>git checkout master
-</span><span class='line'># switch to master branch
-</span><span class='line'>
-</span><span class='line'>git branch branch_name
-</span><span class='line'># creates a branch with that branch name
-</span><span class='line'>
-</span><span class='line'>git add "file name"
-</span><span class='line'># adds file to the stage
-</span><span class='line'>
-</span><span class='line'>git commit -m "commit message"
-</span><span class='line'># commits changes</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>def beer_song(number_of_bottles)
+</span><span class='line'>  if number_of_bottles &gt;= 1
+</span><span class='line'>    puts "#{pluralize(number_of_bottles)} of beer on the wall, #{pluralize(number_of_bottles)} of beer."
+</span><span class='line'>    number_of_bottles = number_of_bottles - 1
+</span><span class='line'>    puts "Take one down and pass it around, #{pluralize(number_of_bottles)} of beer on the wall. \n \n"
+</span><span class='line'>    beer_song(number_of_bottles)
+</span><span class='line'>  else
+</span><span class='line'>    puts "No more bottles of beer on the wall, no more bottles of beer."
+</span><span class='line'>    puts "Go to the store and buy some more, 99 bottles of beer on the wall."
+</span><span class='line'>  end
+</span><span class='line'>end
+</span><span class='line'>puts beer_song(99)</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Here are some helpful resources to learn the git commands and the git
-workflow:</p>
 
-<p><a href="http://mettadore.com/analysis/a-simple-git-rebase-workflow-explained/">A Simple Git Rebase Workflow, Explained</a></p>
-
-<p><a href="http://mettadore.com/analysis/the-ever-deployable-github-workflow/">The Ever-Deployable Github Workflow</a></p>
-
-<p><a href="http://www.git-scm.com/book" >Pro Git Book</a></p>
-
-<p><a href="http://johnjwilliams.org/2013/07/git-command-essentials.html">JohnWilliams.org: Git Command Essentials</a></p>
 </div>
 
 
@@ -189,7 +179,7 @@ workflow:</p>
   
 
 
-<time datetime="2013-10-13T10:50:00-06:00" pubdate data-updated="true">Oct 13<span>th</span>, 2013</time>
+<time datetime="2013-10-25T13:26:00-06:00" pubdate data-updated="true">Oct 25<span>th</span>, 2013</time>
       
 
 
@@ -197,7 +187,7 @@ workflow:</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kellihsf.github.io/blog/2013/10/13/notes-on-github/" data-via="" data-counturl="http://kellihsf.github.io/blog/2013/10/13/notes-on-github/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kellihsf.github.io/blog/2013/10/25/bottles-of-beer-in-ruby/" data-via="" data-counturl="http://kellihsf.github.io/blog/2013/10/25/bottles-of-beer-in-ruby/" >Tweet</a>
   
   
   
@@ -206,10 +196,8 @@ workflow:</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/10/10/mastering-the-command-line/" title="Previous Post: Mastering the Command Line">&laquo; Mastering the Command Line</a>
+        <a class="basic-alignment left" href="/blog/2013/10/13/notes-on-github/" title="Previous Post: Notes on Github">&laquo; Notes on Github</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/10/25/bottles-of-beer-in-ruby/" title="Next Post: Bottles of Beer in Ruby">Bottles of Beer in Ruby &raquo;</a>
       
     </p>
   </footer>
